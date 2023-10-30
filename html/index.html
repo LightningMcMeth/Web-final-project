@@ -18,12 +18,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Link to Bootstrap JavaScript and its dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div class="menu-container">
-        <div class="menu-item company-logo-name">
-            <img src="" class="logo">Click and clack & co.
+        <div class="menu-item company-logo-name" id="company-logo-name">
+            <img src="../images/switchlogo.png" class="logo">Switch & Click
         </div>
 
         <div class="menu-item">About us</div>
@@ -34,8 +42,38 @@
 
     </div>
 
+    <!-- Refactor the names of the classes so they better describe their role -->
     <div class="main-content-container">
-        <img src="../images/mainbackground.png" id="langing-background-image">
+        <img src="../images/mainbackground1.png" id="main-background-image-first">
+        <img src="../images/mainbackground2.png" id="main-background-image-next">
+
+        <h1 class="content-intro-header">Switch & Click: the bests sounds you'll ever hear</h1>
+
+        <div class="content-intro-box">
+            <h1>What are mechanical keyboards?</h1>
+
+            <p>Mechanical keyboards are a type of computer keyboard that offers a unique and tactile typing experience. Unlike
+                traditional rubber dome keyboards, mechanical keyboards use individual mechanical switches for each key. These
+                switches are characterized by their distinct feedback and audible click sound when pressed. This design
+                results in a more precise and satisfying typing feel, making mechanical keyboards popular among gamers, typists, and
+                programmers. Additionally, mechanical keyboards are known for their durability, as the switches are designed to last
+                longer than the rubber domes found in typical keyboards.</p>
+            <br>
+            <br>
+
+            <h1>What does our shop offer?</h1>
+            <p>Our shop offers a selection of high-quality, switches that are loved by mechanical keyboard community. We make sure 
+                to stay on top of the current best switches avalible on the market. Anytime our team comes across a new switch, we
+                make sure to review it to keep up with the market and so the selection of keyboard switches consists of only 
+                the best</p>
+            
+            <a href="../html/shop.html" target="_blank" class="btn btn-outline-secondary">Let's get shopping!</a>
+        </div>
+
+    <div class="">
+        
+    </div>
+
     </div>
 
     <script src="../scripts/script.js" async defer></script>

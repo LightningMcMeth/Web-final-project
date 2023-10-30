@@ -4,29 +4,24 @@
     font-family: 'Raleway', sans-serif;
 }
 
-@media (max-width: 1080px) {
-    .menu-container {
-        padding: 15px 20px;
-    }
-    
-    .menu-item {
-        font-size: 0.9em;
-        padding: 0 5px;
-    }
+:root {
+    --primary-color: #f4f4f4;
+    --button-font-size: 16px;
+    --decorative-font: 'Tangerine', cursive;
+  }
 
-    .company-logo .logo {
-        width: 15px;
-        height: 15px;
-        margin-right: 7px;
-    }
+body {
+    font-size: var(--button-font-size);
 }
+
+/*menu styles*/
 
 .menu-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 250px;
-    background-color: #f4f4f4;
+    background-color: var(--primary-color);
 }
 
 .menu-item {
@@ -37,24 +32,152 @@
 }
 
 .company-logo-name .logo {
-    width: 20px;
-    height: 20px;
     vertical-align: middle;
     margin-right: 10px;
 }
 
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
 .company-logo-name{
-    font-family: 'Great Vibes', cursive;
-    font-family: 'Tangerine', cursive;
+    font-family: var(--decorative-font);
     font-size: 30px;
 }
 
-.main-content-container{
-    background-color: #f4f4f4;
+/*page content styles*/
+
+.main-content-container {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height: 100vh;
 }
 
-#langing-background-image {
+#main-background-image-first, #main-background-image-next {
     width: 100%;
     height: 100%;
-    border-radius: 7%;
+    border-radius: 50px / 50px;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#main-background-image-frst {
+    animation: slideShow1 30s infinite;
+}
+
+#main-background-image-next {
+    animation: slideShow2 30s infinite;
+    opacity: 0;
+}
+
+.content-intro-header {
+    font-size: 120px;
+    font-family: var(--decorative-font);
+    color: var(--primary-color);
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.content-intro-box {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    padding: 30px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    text-align: center;
+    animation: slideDownFadeIn 2s forwards;
+}
+
+.content-intro-box h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.content-intro-box p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+
+@keyframes slideDownFadeIn {
+    0% {
+        top: -100%;
+        opacity: 0;
+    }
+    100% {
+        top: 60%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideshowFirst {
+    0%   {background-image: url("../images/mainbackground1.png");}
+    50%  {background-image: url("../images/mainbackground2.png");}
+    100% {background-image: url("../images/mainbackground1.png");}
+}
+
+@keyframes slideshowNext {
+    0%   {background-image: url("../images/mainbackground2.png");}
+    50%  {background-image: url("../images/mainbackground3.png");}
+    100% {background-image: url("../images/mainbackground2.png");}
+}
+
+@media (max-width: 1080px) {
+
+    .menu-container {
+        padding: 15px 20px;
+    }
+    
+    .menu-item {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+
+    .company-logo-name .logo {
+        width: 15px;
+        height: 15px;
+        margin-right: 7px;
+    }
+
+    .logo {
+        width: 20px;
+        height: 20px;
+    }
+
+    .company-logo-name{
+        font-family: 'Tangerine', cursive;
+        font-size: 15px;
+    }
+
+    .content-intro-box {
+        width: 500px;
+        padding: 20px;
+    }
+
+    .content-intro-box h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .content-intro-box p {
+        font-size: 12px;
+    }
+
+    .content-intro-header {
+        font-size: 60px;
+    }
 }
