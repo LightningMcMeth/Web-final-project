@@ -43,6 +43,12 @@
     margin-right: 10px;
 }
 
+.company-logo-name{
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+}
+
 .main-content-container{
     background-color: #f4f4f4;
 }
