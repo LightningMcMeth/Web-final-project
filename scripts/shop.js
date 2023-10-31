@@ -14,7 +14,8 @@ class switchItem {
                 <div class="item-actions">
                     <select class="item-quantity">
                     </select>
-                    <button class="add-to-cart" data-name="${this.name}" data-price="${this.price}" data-image="${this.imageSrc}">Add to Cart</button>
+                    <p class="price">$${this.price}</p>
+                    <button class="add-to-cart" data-name="${this.name}" data-price="${this.price}" data-image="${this.imageSrc}">Add to cart</button>
                 </div>
             </div>
         </article>

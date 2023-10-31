@@ -1,3 +1,4 @@
+
 .about-us {
     width: 100%;
     height: auto;
@@ -10,7 +11,7 @@
     filter: grayscale(50%);
 }
 
-.header-text {
+.about-text {
     position: absolute;
     top: 10%;
     left: 50%;

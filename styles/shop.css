@@ -3,4 +3,11 @@
     height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop-item {
+    flex: 30%;
+    
 }
