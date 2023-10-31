@@ -7,7 +7,6 @@
     <title>Switch & Click shop</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../styles/style.css">
 
     <!-- Amaranth font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
 
     <!-- Tangerine font (for headers and such) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@700&display=swap"
         rel="stylesheet">
 
@@ -27,10 +24,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 
+
 <body>
-    <div class="menu-container">
+    <nav class="menu-container">
         <div class="menu-item company-logo-name" id="company-logo-name">
             <a href="../html/index.html" class="logo-link">
                 <img src="../images/switchlogo.png" class="logo">Switch & Click
@@ -41,9 +41,9 @@
         <div class="menu-item"><a href="../html/shop.html" style="text-decoration: none;">Shop</a></div>
         <div class="menu-item"><a href="../html/cart.html" style="text-decoration: none;">Cart</a></div>
 
-    </div>
+    </nav>
 
-    <div class="main-content-container">
+    <section class="main-content-container">
         <div class="background-images-container">
             <h1 class="content-intro-header">Switch & Click: the bests sounds you'll ever hear</h1>
             <img src="../images/mainbackground1.png" id="main-background-image-first">
@@ -77,23 +77,20 @@
 
             <a href="../html/shop.html" target="_blank" class="btn btn-outline-secondary">Let's get shopping!</a>
         </div>
+    </section>
 
-        <div class="demo-media-container">
-            <div class="demo-media-window">
-
-                <h1>Here is a demonstration of sounds you'll hear in your life</h1>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/bdR2ystn3uw?si=NS_dIDwRKCcvAkxc"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-
-            </div>
+    <section class="demo-media-container">
+        <div class="demo-media-window">
+    
+            <h1>Here is a demonstration of the best sounds you'll hear in your life</h1>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/bdR2ystn3uw?si=NS_dIDwRKCcvAkxc"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
-
-    </div>
+    </section>
 
     <footer>
-
         <div class="footer-main-container">
 
             <div class="footer-info-container">

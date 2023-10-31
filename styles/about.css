@@ -1,0 +1,41 @@
+.about-us {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+}
+
+.header-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    color: white;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
