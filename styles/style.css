@@ -29,6 +29,30 @@ body {
     text-align: center;
     vertical-align: middle;
     line-height: 1.5;
+    text-decoration: none;
+}
+
+.menu-item a {
+    color:rgb(44, 44, 44);
+}
+
+.menu-item a:hover {
+    color:rgb(117, 41, 124);
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.menu-item a:active {
+    color:rgb(122, 122, 122);
+}
+
+.logo-link {
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--decorative-font);
+    font-size: 50px;
 }
 
 .company-logo-name .logo {
@@ -39,11 +63,6 @@ body {
 .logo {
     width: 40px;
     height: 40px;
-}
-
-.company-logo-name{
-    font-family: var(--decorative-font);
-    font-size: 30px;
 }
 
 /*page content styles*/
@@ -147,7 +166,7 @@ body {
 
 .footer-main-container .footer-info-container {
     display: flex;
-    height: 300px;
+    height: auto;
 }
 
 .footer-main-container {
@@ -156,6 +175,46 @@ body {
 
 .footer-info-container {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-info-container ul {
+    list-style: none;   
+}
+
+.footer-info-container li {
+    margin-bottom: 30px;
+}
+
+.footer-info-container p {
+    font-size: 14px;
+}
+
+.footer-info-container h5 {
+    font-size: 16px;
+    border-bottom: 1px solid;
+}
+
+.footer-info-container div {
+    border: none;
+}
+
+.footer-info-container a {
+    color: black;
+}
+
+.card-container {
+    flex: 1;
+}
+
+.fa {
+    color: black;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.fab {
+    color: black;
 }
 
 .card {
@@ -166,13 +225,22 @@ body {
     border: none;
 }
 
+.social-icon {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 @keyframes slideDownFadeIn {
     0% {
         top: -100%;
         opacity: 0;
     }
     100% {
-        top: 60%;
+        top: 65%;
         transform: translate(-50%, -50%);
         opacity: 1;
     }
@@ -233,5 +301,14 @@ body {
 
     .content-intro-header {
         font-size: 60px;
+    }
+
+    .card-container {
+        flex-basis: 100%;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: auto;
     }
 }
