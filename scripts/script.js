@@ -1,9 +1,9 @@
 
 let imageIndex = 0;
 const images = [
-    '../images/mainbackground1.png',
-    '../images/mainbackground2.png',
-    '../images/mainbackground3.png',
+    'images/mainbackground1.png',
+    'images/mainbackground2.png',
+    'images/mainbackground3.png',
 ];
 
 let firstImg = document.getElementById('main-background-image-first');
