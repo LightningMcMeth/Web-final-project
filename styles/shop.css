@@ -3,11 +3,35 @@
     height: auto;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.shop-items {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
+
 .shop-item {
-    flex: 30%;
-    
+    min-width: 500px;
+    max-width: 500px;
+    flex: 0.5;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-header {
+    flex: 1 1 auto
+}
+
+.shop-item-img-container-ibg {
+    padding-bottom: 100%;
+}
+
+.item-quantity {
+    width: 50px;
 }

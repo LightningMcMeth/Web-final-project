@@ -14,6 +14,18 @@ body {
     font-size: var(--button-font-size);
 }
 
+[class*="-ibg"] {
+    position: relative;
+}
+
+[class*="-ibg"] > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
 /*menu styles*/
 
 .menu-container {
@@ -281,6 +293,10 @@ body {
     .logo {
         width: 20px;
         height: 20px;
+    }
+
+    .logo-link {
+        font-size: 24px;
     }
 
     .company-logo-name{
